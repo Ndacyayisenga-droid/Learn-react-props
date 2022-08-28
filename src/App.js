@@ -1,30 +1,13 @@
 import React from 'react';
-import Jokes from './jokes';
+import Meme from './components/Meme';
+import Header from './components/Header';
+import "./style.css"
 
-
-function App(props) {
+function App() {
   return (
     <div>
-      <Jokes 
-          setup ="Jerry Laruba Festus"
-          punchline ="Artist"
-      />
-      <Jokes
-          setup ="Noah Ndacyayisenga"
-          punchline ="Coder"
-      />
-      <Jokes 
-          setup ="Lumu Christopher"
-          punchline ="Business guy"
-      />
-      <Jokes 
-          setup ="Nsereko Josh"
-          punchline ="Joker"
-      />
-      <Jokes 
-          setup ="Agaba Derrick"
-          punchline ="Short man"
-      />
+      <Header/>
+      <Meme />
     </div>
   );
 }
